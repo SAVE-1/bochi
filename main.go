@@ -7,7 +7,23 @@ import (
 	"github.com/qdrant/go-client/qdrant"
 )
 
-// localhost:6333/dashboard
+/*
+
+	Qdrant dashboard:
+		localhost:6333/dashboard
+
+	https://qdrant.tech/documentation/quickstart/
+	https://tutorialedge.net/ai/calling-ollama-from-go/
+
+	ollama commands:
+		- ollama ps
+		- ollama run qwen3:8b --verbose
+		- ollama serve qwen3:8b
+		- ollama launch qwen3:8b
+		- ollama pull qwen3:8b
+
+
+*/
 
 func main() {
 
