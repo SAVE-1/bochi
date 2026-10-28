@@ -1,0 +1,39 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  EXENAME: learning-buddy.exe
+
+tasks:
+  build:
+    cmds:
+      - go build -o bin/{{.EXENAME}}
+    silent: true
+
+  run:
+    deps: [build]
+    cmds:
+      - ./bin/{{.EXENAME}}
+
+  # help:
+  #   deps: [build]
+  #   cmds:
+  #     - ./bin/{{.EXENAME}} help
+
+  # test-all:
+  #   cmds:
+  #     - go test -tags=all ./...
+  
+  # test-integration:
+  #   cmds:
+  #     - go test --tags=integration ./...
+
+
+# UTILITY
+  loc:
+    cmds:
+      - cloc . --exclude-dir=.git,temp
+
+
+

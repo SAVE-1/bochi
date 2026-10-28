@@ -1,0 +1,10 @@
+services:
+  qdrant:
+    container_name: qdrant
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"   # REST API + web dashboard
+      - "6334:6334"   # gRPC (what the Go client uses)
+    volumes:
+      - ./volumes/qdrant:/qdrant/storage
+    # restart: unless-stopped
