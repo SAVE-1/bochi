@@ -1,0 +1,145 @@
+The Modern Software Developer
+CS146S 
+Stanford University, Fall 2026
+Mihail Eric
+themodernsoftware.dev
+
+Logistics
+Factory workshop
+Thursday, 6:20-645pm
+Announcing the OSS partners program
+Anyscale (Ray)
+Arize AI (Phoenix)
+Browserbase
+cmux
+CopilotKit
+CrewAI
+HeyGen 
+Marimo
+OpenHands
+Pi
+Unsloth AI
+Vercel
+Warp
+Zilliz
+
+themodernsoftware.dev
+
+
+Advanced Prompting and Context Engineering for Complex Codebases
+themodernsoftware.dev
+Which brings us to this course…
+
+Orientation
+themodernsoftware.dev
+Objective
+Move beyond ad-hoc prompting to a robust and reliable synchronous AI development workflow 
+Use AI to rapidly onboard to unfamiliar codebases and systematically complete complex coding tasks
+Lesson Plan
+Learn how to onboard to large unfamiliar codebases rapidly
+Learn spec-driven engineering via the RePPIT framework
+Research
+Propose
+Plan
+Implement
+Test
+Learn about other spec-driven AI development frameworks
+
+themodernsoftware.dev
+
+Vibe coding confuses expectations
+themodernsoftware.dev
+
+Vibe coding has different definitions but the standard one of just YOLO-ing and tab-accepting AI code is not the focus here
+
+
+How would you build a Mint clone?
+themodernsoftware.dev
+
+Writing production AI code requires being methodical
+themodernsoftware.dev
+You should have an active, functional mental model of how you would build your solution
+
+Principles of Production AI Code
+Understand an unfamiliar codebase
+Propose some solutions
+Plan out the most promising solution
+Implement it
+Test it
+themodernsoftware.dev
+
+These days bad code is both architecturally wrong decisions but also functionally incorrect software (from hallucinating LLMs)
+
+Use RePPIT
+themodernsoftware.dev
+
+themodernsoftware.dev
+R  esearch
+
+P  ropose
+
+P  lan
+
+I   mplement
+
+T  est
+This is something you should iterate on to find what works for you but these high level points should be a solid starting point for your own workflow 
+
+
+Demo
+themodernsoftware.dev
+Feature: Include a trend line showing spending by category over time. 
+
+
+themodernsoftware.dev
+½-¾ of “smart” tokens
+in context window
+System prompt
+AGENTS.md/CLAUDE.md
+Task-specific context
+the “dumb” zone
+
+
+Review your specs very carefully 
+For very large features, break your task down into task lists 
+When an item is finished, document your agent’s work in a written artifact
+This becomes context with which the next item can be continued
+Be very mindful of your context window (½-¾ of “smart” tokens)
+
+themodernsoftware.dev
+Best practices
+
+Task delegation taxonomy	
+themodernsoftware.dev
+Approaches
+Simple prompting
+Make a plan
+Research then plan
+(Research then plan) x N
+When to apply each?
+
+
+Task delegation taxonomy	
+themodernsoftware.dev
+
+
+Source
+
+Superpowers
+Opinionated end-to-end, guided workflow for solving complex tasks
+TDD-based
+A set of agent skills that can be used for spec/plan creation, implementation, and testing
+Built-in parallelism
+Openspec
+Lightweight flow for developing specs, implementation plans, etc
+Neat methodology around tracking changes in source-of-truth specs and merging them after a diff is made
+
+themodernsoftware.dev
+Other popular frameworks
+
+Where do specs live?
+Linear or locally/Git (as per OpenSpec)
+Design tradeoffs / decision points for parts of the codebase can live in .notes/
+
+themodernsoftware.dev
+Spec management
